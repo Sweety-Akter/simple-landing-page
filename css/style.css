@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'JetBrains Mono', monospace;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    margin-top: 70px;
+    display: grid;
+    grid-template-areas: 'left-side right-side';
+    padding: 1.3rem;
+}
+.nav-bar{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem;
+}
+.menu{
+    display: flex;
+}
+a{
+    text-decoration: none;
+    color: #00293c;
+}
+.links:hover{
+    border-bottom: 3px solid #00293c;
+}
+li{
+    list-style: none;
+    padding: 0 20px;
+}
+.nav-logo{
+    font-size: 32px;
+    font-weight: lighter;
+}
+.signup{
+    padding: 10px 20px;
+    border: none;
+    background-color: #ddd;
+    border-radius: 20px;
+    transition: all .5s ease-in-out;
+}
+.signup:hover{
+    background: none;
+    color: #00293c;
+}
+.left-side{
+    grid-area: left-side;
+}
+h1{
+    font-size: 60px;
+    color: #00293c;
+}
+p{
+    color: #00293c;
+    font-size: 18px;
+    margin-top: 8px;
+}
+.btn{
+    padding: 15px 20px;
+    margin-top: 40px;
+    background-color: #ddd;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    color: #00293c;
+    font-size: 17px;
+    transition: all .5s ease-in-out;
+}
+.btn:hover{
+    background: none;
+}
+.right-side{
+    grid-area: right-side;
+    height: 100vh;
+    width: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
